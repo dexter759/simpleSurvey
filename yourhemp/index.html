@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Fullscreen Form Interface</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Dexter759" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-circular.css"/>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Premium Survey</h1>
+					<div class="codrops-top">
+						<a class="codrops-icon codrops-icon-info" href="#"><span>Explainer</span></a>
+					</div>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<!--Name-->
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
+							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/>
+						</li>
+						<!--Email-->
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="We won't send you spam, we promise...">What's your email address?</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="dean@road.us" required/>
+						</li>
+						<!--Q1-->
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="This will help us know what kind of service you need">Eu non diam phasellus vestibulum lorem sed risus ultricies tristique?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3b" name="q3" type="radio" value="conversion"/><label for="q3b" class="radio-conversion">Lorem Ipsum</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Lorem Ipsum</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="mobile"/><label for="q3a" class="radio-mobile">Lorem Ipsum</label></span>
+							</div>
+						</li>
+						<!--Q2-->
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will help us know what kind of service you need">Eu non diam phasellus vestibulum lorem sed risus ultricies tristique?</label>
+								<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+									<span><input id="q4b" name="q4" type="radio" value="conversion"/><label for="q4b" class="radio-conversion">Lorem Ipsum</label></span>
+									<span><input id="q4c" name="q4" type="radio" value="social"/><label for="q4c" class="radio-social">Lorem Ipsum</label></span>
+									<span><input id="q4a" name="q4" type="radio" value="mobile"/><label for="q4a" class="radio-mobile">Lorem Ipsum</label></span>
+								</div>
+							</li>
+						<!--Q3-->
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q5" data-info="This will help us know what kind of service you need">Eu non diam phasellus vestibulum lorem sed risus ultricies tristique?</label>
+								<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+									<span><input id="q5b" name="q5" type="radio" value="conversion"/><label for="q5b" class="radio-conversion">Lorem Ipsum</label></span>
+									<span><input id="q5c" name="q5" type="radio" value="social"/><label for="q5c" class="radio-social">Lorem Ipsum</label></span>
+									<span><input id="q5a" name="q5" type="radio" value="mobile"/><label for="q5a" class="radio-mobile">Lorem Ipsum</label></span>
+								</div>
+						</li>
+								
+						
+						<!-- <li data-input-trigger>
+								<label class="fs-field-label fs-anim-upper" for="q2" data-info="What you like is the thing you will get">Chose the picture you like the most</label>
+							
+							<section>
+									<select class="cs-select cs-skin-circular fs-anim-lower">
+										<option value="" disabled selected>Select an activity</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</section>
+						</li> -->
+						
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q6">Eu non diam phasellus vestibulum lorem sed risus ultricies tristique?</label>
+							<textarea class="fs-anim-lower" id="q6" name="q6" placeholder="Describe here"></textarea>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q7">What's your budget?</label>
+							<input class="fs-mark fs-anim-lower" id="q7" name="q7" type="number" placeholder="1000" min="1"/>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Send answers</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+		</div><!-- /container -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+						var img = document.createElement('img');
+						img.src = 'img/'+val+'.png';
+						img.onload = function() {
+						document.querySelector('span.cs-placeholder').style.backgroundImage = 'url(img/'+val+'.png)';
+						}
+					}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+
+
+	</body>
+</html>
